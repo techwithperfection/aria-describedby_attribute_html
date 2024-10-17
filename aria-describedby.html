@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aria-describedby.css">
+    <title>My Website</title>
+</head>
+<body>
+    <div class="center-container1">
+      <h1>ARIA-describedby Attribute in HTML</h1>   
+       <form>
+            <div class="form-group">
+                <label class="form-label" for="name" id="nameLabel">Full Name:</label>
+                <input class="input-style" type="text" id="nameInput" aria-describedby="usernameHelp">
+                <p id="usernameHelp">Your username should be 6-12 characters long and contain no special characters.</p>
+              
+            </div>
+            
+            <div class="form-group form-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>  
+    
+    <!-- <div class="center-container2">
+        <div>
+            <div class="product-name" id="productTitle">Product Name</div>
+            <div class="product-description" id="productDescription">A short description of the product.</div>
+            <input class="input-style2" type="text" id="productInput" aria-labelledby="productTitle productDescription"> 
+        </div> -->
+       <hr class="hr-class">
+       <hr>
+           <div>
+            <button id="infoButton" aria-describedby="buttonDescription">More Info</button>
+            <p style="display: none;" class="form-label" id="buttonDescription">Clicking this button will open a modal with more information about our services.
+            </p>
+            </div>
+        </div>  
+    </div> 
+</body>
+</html>
